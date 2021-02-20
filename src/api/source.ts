@@ -4,14 +4,10 @@ import { switchMap } from "rxjs/operators"
 import { PartyId } from "./parties"
 import { Provinces } from "./provinces"
 
-/*
 export const DATA_SOURCE: any =
-  import.meta.env.VERCEL_GIT_COMMIT_REF === "main"
-    ? import.meta.env.DATA_SOURCE
-    : import.meta.env.STAGING_DATA_SOURCE
-*/
-export const DATA_SOURCE =
-  "https://storage.googleapis.com/eleccions-2021/election_data.json"
+  import.meta.env.VITE_VERCEL_GIT_COMMIT_REF === "main"
+    ? import.meta.env.VITE_DATA_SOURCE
+    : import.meta.env.VITE_STAGING_DATA_SOURCE
 
 export const POLL_TIME = 60_000
 
